@@ -1,24 +1,15 @@
-# Terminal Tic-Tac-Toe
+# Tic-Tac-Toe in C++
 
-This project is a small terminal-based Tic-Tac-Toe game made for two players.
+A small console-based Tic-Tac-Toe game built with C++ using separate header and source files.
 
-## How to run
+## Compile
 
-1. Open a terminal in the project folder.
-2. Build the game:
-   `make`
-3. Start the game:
-   `./tictactoe`
+```bash
+g++ main.cpp src/Game.cpp src/Board.cpp -Iinclude -o tic_tac_toe
+```
 
-## Project structure
+## Run
 
-- `include/board.h` — board-related declarations
-- `include/game.h` — game flow declarations
-- `src/board.c` — board logic and rendering
-- `src/game.c` — gameplay loop and rules
-- `src/main.c` — program entry point
-- `Makefile` — build setup
-
-## Controls
-
-Players type a number from 1 to 9 to place their mark on the board.
+```bash
+./tic_tac_toe
+```
